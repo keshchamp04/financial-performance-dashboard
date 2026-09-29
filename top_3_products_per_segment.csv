@@ -1,0 +1,16 @@
+segment,rnk,product,total_profit
+Channel Partners,1,Paseo,331838.0
+Channel Partners,2,Amarilla,230069.0
+Channel Partners,3,VTT,219766.0
+Enterprise,1,Montana,-31096.0
+Enterprise,2,Paseo,-81740.0
+Enterprise,3,Velo,-84763.0
+Government,1,Paseo,3057291.0
+Government,2,Amarilla,2208302.0
+Government,3,VTT,1840654.0
+Midmarket,1,Paseo,258739.0
+Midmarket,2,Carretera,94105.0
+Midmarket,3,VTT,91121.0
+Small Business,1,Paseo,1231310.0
+Small Business,2,VTT,982150.0
+Small Business,3,Montana,743314.0
