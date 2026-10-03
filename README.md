@@ -1,4 +1,4 @@
-# Financial Performance Dashboard
+# Financial Performance Dashboard (SQL + Power BI)
 
 An end-to-end analytics project on Microsoft's Financial Sample dataset: SQL for the analysis, Power BI for the interactive dashboard.
 
@@ -22,7 +22,7 @@ One thing to know: **2013 only covers Sep-Dec**, so full-year comparisons would 
 
 ## Approach
 
-**1. SQL first** (`analytics_queries.sql`, SQLite database `financials.db`)
+**1. SQL first** (`sql/analytics_queries.sql`, SQLite database `financials.db`)
 - Basic GROUP BY exploration of sales, profit and margin
 - Month-over-month sales growth using a CTE and `LAG`
 - Top 3 products per segment using `RANK() OVER (PARTITION BY segment ...)`
@@ -70,13 +70,13 @@ The "Top 3 Products per Segment" table comes from the SQL ranking query and cove
 
 | File | What it is |
 |---|---|
-| `analytics_queries.sql` | All SQL queries (basic + advanced) |
+| `sql/analytics_queries.sql` | All SQL queries (basic + advanced) |
 | `01_data_setup.ipynb` | Loads the data into SQLite, basic exploration |
 | `02_advanced_sql.ipynb` | Runs the advanced queries and exports results |
 | `financials.db` | SQLite database |
 | `financials_export.csv`, `mom_growth.csv`, `moving_avg_3month.csv`, `top_3_products_per_segment.csv` | Data used by Power BI |
-| `financial_performance_dashboard.pbix` | Power BI file |
-| `financial_performance_dashboard.pdf` | PDF export of the dashboard |
+| `dashboard/financial_performance_dashboard.pbix` | Power BI file |
+| `dashboard/financial_performance_dashboard.pdf` | PDF export of the dashboard |
 | `insights_and_recommendations_memo.pdf` | 1-page memo with 3 insights and recommendations |
 | `screenshots/` | Dashboard screenshots used above |
 
